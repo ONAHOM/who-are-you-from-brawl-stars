@@ -1,0 +1,89 @@
+.navbar {
+    background: rgb(1, 23, 20);
+    background: linear-gradient(90deg, rgba(1, 23, 20, 1) 10%, rgba(2, 50, 91, 1) 43%, rgba(7, 64, 84, 1) 67%, rgba(22, 10, 89, 1) 97%);
+}
+
+.navbar a{
+    color: #fff;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    border-bottom: 2px solid black;
+}
+
+.bdy {
+    background: rgb(23, 1, 21);
+    background: linear-gradient(90deg, rgba(23, 1, 21, 1) 10%, rgba(76, 2, 91, 1) 43%, rgba(7, 32, 84, 1) 72%, rgba(24, 0, 36, 1) 94%);
+}
+
+.gg {
+    background: rgb(23, 1, 21);
+    background: linear-gradient(90deg, rgba(23, 1, 21, 1) 10%, rgba(76, 2, 91, 1) 43%, rgba(7, 32, 84, 1) 72%, rgba(24, 0, 36, 1) 94%);
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 40px;
+    height: 400px;
+}
+
+.png {
+    width: 100%;
+    max-width: 1950px;
+}
+
+.first {
+    background: rgb(0, 25, 36);
+    background: linear-gradient(90deg, rgba(0, 25, 36, 1) 8%, rgba(13, 9, 124, 1) 43%, rgba(9, 60, 124, 1) 72%, rgba(2, 0, 36, 1) 94%);
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 40px;
+    height: 400px;
+    position: relative;
+}
+
+.second {
+    background: rgb(17, 1, 23);
+    background: linear-gradient(90deg, rgba(17, 1, 23, 1) 8%, rgba(76, 2, 91, 1) 43%, rgba(7, 32, 84, 1) 72%, rgba(0, 36, 33, 1) 94%);
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 40px;
+    height: 400px;
+}
+
+.foe{
+    margin-top: 30px;
+}
+
+.carousel-inner{
+    overflow: hidden;
+    z-index: 50;
+}
+
+.shelly-photo{
+    position: absolute;
+    z-index: 30;
+    left: 190px;
+    bottom: 240px;
+}
+
+.colt-cont{
+    position: relative;
+}
+
+.colt-photo{
+    position: absolute;
+    z-index: 30;
+    left: -50px;
+    bottom: 160px;
+}
+
+.monet{
+    user-select: none;
+    cursor: pointer;
+}
+
+#counter{
+    user-select: none
+}

